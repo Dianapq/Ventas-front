@@ -11,7 +11,7 @@ const RegisterAdmin = ({ setShowRegister }) => {
     e.preventDefault();
     try {
       //await axios.post("http://localhost:5000/api/auth/register", {
-      await axios.post("http://ventas-backend-one.vercel.app/api/auth/register", {
+      await axios.post("https://ventas-backend-one.vercel.app/api/auth/register", {
         email,
         password,
         role: "admin", // Administrador
