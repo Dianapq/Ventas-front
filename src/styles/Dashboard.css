@@ -1,0 +1,88 @@
+/* ✅ Contenedor principal */
+.dashboard-container {
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #d48bf0, #9bb5f0);
+    color: rgb(1, 1, 1);
+}
+
+/* ✅ Encabezado */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    padding: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.dashboard-header h2 {
+    font-size: 24px;
+}
+
+/* ✅ Botón de cerrar sesión */
+.dashboard-button {
+    padding: 10px 15px;
+    background: #c3c6cb;
+    color: rgb(15, 8, 8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.dashboard-button:hover {
+    background: #7971ed;
+    transform: scale(1.05);
+}
+
+.dashboard-button:active {
+    transform: scale(0.95);
+}
+
+/* ✅ Tabla de ventas */
+.dashboard-table {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.dashboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-table th {
+    background: #444;
+    color: white;
+}
+
+/* ✅ Mensaje cuando no hay ventas */
+.no-sales {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}

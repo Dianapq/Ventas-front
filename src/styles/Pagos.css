@@ -1,0 +1,79 @@
+/*Estilo general del contenedor */
+.pagar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #d48bf0, #9bb5f0); /* Fondo degradado */
+}
+
+/*Caja del formulario */
+.pagar-box {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/*Estilo del título */
+.pagar-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/*Estilo de los inputs */
+.pagar-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0d0707;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Botón de pago */
+.pagar-button {
+    width: 100%;
+    padding: 12px;
+    background: #b6b5b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagar-button:hover {
+    background: #2f65c9;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pagar-button:active {
+    transform: scale(0.95);
+}
+
+/*Asegura que el placeholder sea visible */
+.pagar-box input::placeholder {
+    color: rgba(0, 0, 0, 0.6); 
+    font-weight: bold;
+}
+
+.pagar-box input {
+    color: #000; /* Texto negro para que sea legible */
+    background-color: #fff; /* Fondo blanco dentro del input */
+}
+
+
+.pagar-box input:focus {
+    color: #000; /* Mantiene el texto visible cuando se escribe */
+    border-color: #4a47a3;
+    box-shadow: 0px 0px 5px rgba(74, 71, 163, 0.5);
+}
