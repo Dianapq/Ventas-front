@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      {/* ✅ Encabezado */}
+      {/* Encabezado */}
       <div className="dashboard-header">
         <h2>Bienvenido, {admin}</h2>
         <button onClick={handleLogout} className="dashboard-button">
@@ -41,7 +41,7 @@ const Dashboard = () => {
         </button>
       </div>
 
-      {/* ✅ Lista de Ventas */}
+      {/*Lista de Ventas */}
       <h3>Lista de Ventas</h3>
       <button onClick={cargarVentas} className="dashboard-button">
         Actualizar Página
